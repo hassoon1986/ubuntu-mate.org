@@ -1073,6 +1073,7 @@ SEARCH_FORM = """
 # before </head>
 # (translatable)
 EXTRA_HEAD_DATA = """
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="196x196" href="/favicon-196.png">
@@ -1098,6 +1099,22 @@ EXTRA_HEAD_DATA = """
 # in the default template (base.tmpl).
 # (translatable)
 BODY_END = """
+    <!-- Libraries -->
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- jQuery Fallback -->
+    if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='/assets/js/jquery-1.12.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+
+    <!-- Bootstrap Fallback -->
+    if ( typeof($.fn.modal) === 'undefined') {
+    document.write('<script src="/assets/js/bootstrap.3.3.6.min.js"><\/script>')
+    }
+    $.fn.modal || document.write('<script src="">\x3C/script>')
+
+    <!-- Nikola Libraries -->
     <script src="/assets/js/tipuesearch_set.js"></script>
     <script src="/assets/js/tipuesearch.js"></script>
     <script>
