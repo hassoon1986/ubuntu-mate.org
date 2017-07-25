@@ -131,6 +131,7 @@ NAVIGATION_LINKS = {
 	("/blog/", "Blog"),
 	("/community/", "Community"),
 	("/download/", "Download"),
+	("/get-involved/", "Get Involved"),
 	("/team/", "Team"),
         ("/donate/", "Donate"),
         ("https://ubuntu-mate.boutique/", "Shop"),
