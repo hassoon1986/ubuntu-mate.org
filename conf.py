@@ -516,13 +516,13 @@ ARCHIVE_FILENAME = "index.html"
 #
 # If you don't need any of these, just set to []
 REDIRECTIONS = [
-("longterm/index.html", "/download/index.html"),
-("trusty/index.html", "/download/index.html"),
-("utopic/index.html", "/download/index.html"),
-("vivid/index.html", "/download/index.html"),
-("wily/index.html", "/download/index.html"),
-("xenial/index.html", "/download/index.html"),
-("pre-release/index.html", "/download/index.html"),
+    ("longterm/index.html", "/download/index.html"),
+    ("trusty/index.html", "/download/index.html"),
+    ("utopic/index.html", "/download/index.html"),
+    ("vivid/index.html", "/download/index.html"),
+    ("wily/index.html", "/download/index.html"),
+    ("xenial/index.html", "/download/index.html"),
+    ("pre-release/index.html", "/download/index.html")
 ]
 
 # Presets of commands to execute to deploy. Can be anything, for
@@ -1022,7 +1022,7 @@ INDEX_DISPLAY_POST_COUNT = 5
 # between each other. Old Atom feeds with no changes are marked as archived.
 # GENERATE_ATOM = False
 
-# Only inlclude teasers in Atom and RSS feeds. Disabling include the full
+# Only include teasers in Atom and RSS feeds. Disabling include the full
 # content. Defaults to True.
 # FEED_TEASERS = True
 
