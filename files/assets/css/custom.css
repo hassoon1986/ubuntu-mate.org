@@ -267,3 +267,23 @@ img.right {
     float: right;
 }
 
+/*************************************
+ Blog Index
+**************************************/
+#blog-index .post-list-item {
+    color: gray;
+}
+
+#blog-index .post-list-item > a {
+    float: left;
+    margin-right: 2em;
+    min-width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+    #blog-index .post-list-item > a {
+        float: none;
+        margin-right: 0;
+        min-width: none;
+    }
+}
