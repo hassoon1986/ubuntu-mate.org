@@ -14,3 +14,9 @@ end
 # https://github.com/sverrirs/jekyll-webp
 gem "jekyll-webp"
 
+# Asset Pipeline - Minify & compresses assets
+# https://github.com/matthodan/jekyll-asset-pipeline
+gem "jekyll_asset_pipeline"
+gem "sass"
+gem "yui-compressor"
+

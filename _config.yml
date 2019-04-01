@@ -65,6 +65,14 @@ exclude_from_localization: [
     "assets"
 ]
 parallel_localization: true
+
+# Asset Pipeline settings
+# Actual CSS/JS files are managed in '_includes/head.html' and '_includes/footer.html'
+asset_pipeline:
+    compression: true
+    output_path: assets
+    gzip: true
+
 # Site configuration for the WebP Generator Plugin
 # The values here represent the defaults if nothing is set
 webp:
